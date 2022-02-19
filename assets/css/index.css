@@ -32,7 +32,7 @@ h3
   text-transform: uppercase;
 }
 
-h4, h2
+h4, h2, #cp
 {
   color: var(--light);
 }
@@ -165,6 +165,29 @@ body
   border-left: 4px solid var(--blue);
 }
 
+#footer-content
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#by
+{
+  display: flex;
+  align-items: center;
+}
+
+#by p
+{
+  margin: 0 8px;
+
+}
+#by img
+{
+  max-width: 60px;
+}
 
 
 
