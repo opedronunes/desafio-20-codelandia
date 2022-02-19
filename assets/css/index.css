@@ -19,6 +19,29 @@
   --light: #ffffff;
 }
 
+h1
+{
+  color: var(--light);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3
+{
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+h4, h2
+{
+  color: var(--light);
+}
+
+p
+{
+  color: var(--gray-light);
+}
+
 body
 {
   background: var(--dark);
@@ -41,11 +64,6 @@ body
   flex-direction: column;
 }
 
-#content h3
-{
-  color: var(--light);
-  text-transform: uppercase;
-}
 #content h1
 {
   color: var(--blue);
@@ -53,19 +71,21 @@ body
   font-weight: 600;
 }
 
-#about
+#about, #projetos
 {
   height: 100vh;
   background: var(--dark-200);
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
 #perfil img
 {
   border-radius: 3px;
   border-left: 4px solid var(--blue);  
+  max-width: 400px;
+  margin: 20px 0;
 }
 
 #about-content h1, h4
@@ -90,7 +110,7 @@ body
 {
   display: flex;
   gap: 2rem;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .btn-social-01
@@ -120,7 +140,41 @@ body
 #btn-social img
 {
   width: 28px;
-  padding: 0 5px;
+  margin-right: 8px;
+}
+
+#btn-social i
+{
+  margin-right: 8px;
+}
+
+.card
+{
+  background: none;
+  border: none;
+}
+
+.card p:nth-child(3)
+{
+  padding-top: 10px;
+  color: var(--blue);
+}
+
+.card-img img
+{
+  border-left: 4px solid var(--blue);
 }
 
 
+
+
+@media (min-width:320px) and (max-width:480px) {
+  #perfil img{
+    width: 100%;
+  }
+
+  #projetos
+  {
+    height: auto;
+  }
+}
