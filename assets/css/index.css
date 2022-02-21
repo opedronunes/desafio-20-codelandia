@@ -173,6 +173,38 @@ body
   padding: 20px 0;
 }
 
+.menu
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(165deg, #6518b4, #9358f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li
+{
+  position: absolute;
+  list-style: none;
+}
+
+.toggle
+{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 1.8rem;
+}
 #by
 {
   display: flex;
