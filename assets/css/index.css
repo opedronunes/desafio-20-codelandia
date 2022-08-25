@@ -47,10 +47,11 @@ body
   background: var(--dark);
   font-family: 'Inter', sans-serif;
 }
-
+section{
+  margin: 50px 0;
+}
 #top
 {
-  height: calc(100vh - 70px);
   background-image: url(/uploads/img/Looper\ BG.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -268,12 +269,17 @@ body
 
 
 @media (min-width:320px) and (max-width:480px) {
+  #top{
+    
+    background-image: none;
+  }
+  #top-content, #about, #experiencia, #projetos{
+    height: auto;
+  }
+  #about img{
+    display: none;
+  }
   #perfil img{
     width: 100%;
-  }
-
-  #projetos
-  {
-    height: auto;
   }
 }
