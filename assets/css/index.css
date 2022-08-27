@@ -170,6 +170,32 @@ section{
   display: none;
 }
 
+#btn-tabs{
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 3rem 0 0;
+}
+
+#btn-tabs button
+{
+  border: none;
+  background: var(--dark-200);
+  padding: 12px 0;
+  width: 100%;
+  color: var(--gray-light);
+}
+
+.header-tabs
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-tabs p{
+  margin: 0;
+}
+
 #footer-content
 {
   display: flex;

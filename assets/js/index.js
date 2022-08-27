@@ -5,26 +5,12 @@ toggle.onclick = function(){
   menu.classList.toggle('active')
 };
 
-/*
-function buttonShowContent(){
-  let content = document.getElementById("content");
-  content.onclick = function(){
-    if(content.style.display === "none"){
-      content.style.display = "block";
-    }else{
-      content.style.display = "none";
-    }
-
-  }
-};
-*/
-
 let btn = document.querySelectorAll('button')
 let tabs = document.querySelectorAll('.tabs > div')
 
 btn.forEach(function(click){
-  click.addEventListener('click', function(){
-    tabs.forEach(function(tab){
+  click.addEventListener('click', () => {
+    tabs.forEach((tab) => {
       tab.classList.add('content-tabs')
     })
 
