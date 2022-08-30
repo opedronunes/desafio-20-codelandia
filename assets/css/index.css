@@ -170,19 +170,27 @@ section{
   display: none;
 }
 
+
 #btn-tabs{
   display: flex;
   flex-direction: column;
   padding: 1.2rem 3rem 0 0;
+  
 }
 
 #btn-tabs button
 {
   border: none;
-  background: var(--dark-200);
-  padding: 12px 0;
+  border-left: 1px solid var(--dark-200);
+  background: none;
+  padding: 12px 0 12px 20px;
   width: 100%;
   color: var(--gray-light);
+  text-align: left;
+}
+#btn-tabs button.active {
+  border-left: 1px solid var(--blue);
+  background: var(--dark-200);
 }
 
 .header-tabs
@@ -192,8 +200,16 @@ section{
   justify-content: space-between;
   align-items: center;
 }
-.header-tabs p{
+.header-tabs small{
   margin: 0;
+  color: var(--light);
+}
+:is(#content1, #content2,#content3) p:nth-child(2){
+  color: #00d2df;
+}
+
+.body-content{
+  color: var(--gray-light);
 }
 
 #footer-content
@@ -311,5 +327,50 @@ section{
   }
   #perfil img{
     width: 100%;
+  }
+  #btn-tabs{
+    flex-direction: row;
+    padding: 1rem;
+  }
+  #btn-tabs button{
+    font-size: 1rem;
+    padding: 8px 8px;
+    border-left: none;
+    border-bottom: 1px solid var(--dark-200);
+  }
+  #btn-tabs button.active {
+    border-left: none;
+    border-bottom: 1px solid var(--blue);
+    background: var(--dark-200);
+  }
+}
+@media (min-width:480.2px) and (max-width:680px){
+  #top{
+    background-image: none;
+  }
+  #top-content, #about, #experiencia, #projetos{
+    height: auto;
+  }
+  #about img{
+    display: none;
+  }
+  #perfil img{
+    width: 100%;
+  }
+  #btn-tabs{
+    flex-direction: row;
+    padding: 1rem;
+  }
+  #btn-tabs button{
+    font-size: 1rem;
+    padding: 8px 8px;
+    border-left: none;
+    border-bottom: 1px solid var(--dark-200);
+    text-align: center;
+  }
+  #btn-tabs button.active {
+    border-left: none;
+    border-bottom: 1px solid var(--blue);
+    background: var(--dark-200);
   }
 }

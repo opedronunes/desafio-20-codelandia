@@ -79,7 +79,7 @@ a {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   #menu {
     display: block;
     position: absolute;
