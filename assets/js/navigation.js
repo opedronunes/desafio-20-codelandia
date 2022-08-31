@@ -15,3 +15,12 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+const listHeader = document.querySelectorAll('.list-header');
+function activeLinkHeader(){
+    listHeader.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+listHeader.forEach((item) =>
+item.addEventListener('click', activeLinkHeader));
