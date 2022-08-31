@@ -40,8 +40,8 @@ a {
 }
 
 #logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   color: var(--blue);
 }
 
@@ -70,6 +70,11 @@ a {
 }
 
 #menu a:hover {
+  background: var(--blue);
+  border-radius: 3px;
+  color: var(--dark-200);
+}
+#menu li.active a{
   background: var(--blue);
   border-radius: 3px;
   color: var(--dark-200);

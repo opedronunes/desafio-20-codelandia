@@ -21,6 +21,15 @@ btn.forEach(function(click){
   })
 });
 
+const listHeader = document.querySelectorAll('.list-header');
+function activeLinkHeader(){
+    listHeader.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+listHeader.forEach((item) =>
+item.addEventListener('click', activeLinkHeader));
+
 const list = document.querySelectorAll('.list');
 function activeLink(){
     list.forEach((item) =>

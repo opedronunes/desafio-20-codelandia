@@ -52,7 +52,7 @@ section{
 }
 #top
 {
-  background-image: url(/uploads/img/Looper\ BG.png);
+  background-image: url(/uploads/img/LooperBG.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -68,8 +68,17 @@ section{
 #content h1
 {
   color: var(--blue);
+  font-size: 64px;
   text-transform: uppercase;
   font-weight: 600;
+  line-height: 77.45px;
+}
+
+#content h3{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24.05px;
+  text-align: justify;
 }
 
 #about, #projetos
@@ -87,6 +96,14 @@ section{
   border-left: 4px solid var(--blue);  
   max-width: 400px;
   margin: 20px 0;
+}
+
+#about-content h1{
+  font-size: 24px;
+  font-weight: 600;
+}
+#about-content h4{
+  font-size: 20px;
 }
 
 #about-content h1, h4
@@ -116,7 +133,7 @@ section{
 
 .btn-social-01
 {
-  padding: 5px 15px;
+  padding: 8px 25px;
   border: 3px solid transparent;
   border-image: linear-gradient(40deg, #9358f7, #10d7e2 100%);
   border-image-slice: 1;
@@ -126,7 +143,7 @@ section{
 
 .btn-social-02
 {
-  padding: 5px 15px;
+  padding: 8px 25px;
   border: 3px solid transparent;
   border-image: linear-gradient(120deg, #d24074, #6518b4 100%);
   border-image-slice: 1;
@@ -136,17 +153,13 @@ section{
 #btn-social a
 {
   color: var(--light);
+  display: flex;
+  gap: 15px;
 }
 
 #btn-social img
 {
-  width: 28px;
-  margin-right: 8px;
-}
-
-#btn-social i
-{
-  margin-right: 8px;
+  width: 1.2rem;
 }
 
 .card
@@ -200,12 +213,17 @@ section{
   justify-content: space-between;
   align-items: center;
 }
+.header-tabs h4{
+  font-size: 24px;
+  margin: 0;
+}
 .header-tabs small{
   margin: 0;
   color: var(--light);
 }
 :is(#content1, #content2,#content3) p:nth-child(2){
   color: #00d2df;
+  margin: 20px 0;
 }
 
 .body-content{
